@@ -42,7 +42,7 @@ For EmoryNLP (test F1: 36.27):
 
 
 ## Training
-You can also train the models your self with the following codes:
+You can also train the models with the following codes:
 
 For IEMOCAP: 
 `python run.py --dataset_name IEMOCAP --max_sent_len 200 --mem_len 900 --windowp 10 --num_heads 2 2 4 4 --dropout 0 --lr 1e-5 --epochs 50`
