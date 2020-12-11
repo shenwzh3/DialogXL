@@ -33,6 +33,9 @@ You can run the following codes to get results very close to those reported in o
 For IEMOCAP (test F1: 65.88): 
 `python eval.py --dataset_name IEMOCAP --max_sent_len 200 --mem_len 900 --windowp 10 --num_heads 2 2 4 4 --modelname IEMOCAP_xlnet_dialog`
 
+For MELD (test F1: 62.67):
+`python eval.py --dataset_name MELD --max_sent_len 300 --mem_len 400 --windowp 5 --num_heads 5 5 1 1 --modelname MELD_xlnet_dialog`
+
 For DailyDialog (test F1: 55.67): 
 `python eval.py --dataset_name DailyDialog --max_sent_len 300 --mem_len 450 --windowp 10 --num_heads 1 2 5 4 --dropout 0.3 --modelname DailyDialog_xlnet_dialog
 `
@@ -46,6 +49,9 @@ You can also train the models with the following codes:
 
 For IEMOCAP: 
 `python run.py --dataset_name IEMOCAP --max_sent_len 200 --mem_len 900 --windowp 10 --num_heads 2 2 4 4 --dropout 0 --lr 1e-5 --epochs 50`
+
+For MELD: 
+`python run.py --dataset_name MELD --max_sent_len 300 --mem_len 400 --windowp 5 --num_heads 5 5 1 1 --dropout 0 --lr 1e-6 --epochs 15`
 
 For DailyDialog: 
 `python run.py --dataset_name DailyDialog --max_sent_len 300 --mem_len 450 --windowp 10 --num_heads 1 2 5 4 --dropout 0.3 --lr 1e-6 --epochs 20`
