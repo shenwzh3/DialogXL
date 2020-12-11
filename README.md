@@ -11,7 +11,7 @@ This repo contains the PyTorch implementaion for AAAI-2021 accepted paper Dialog
 ## Perparation
 
 ### Datasets
-We have provided the preprocessed datasets of IEMOCAP, MELD, DailyDialog and EmoryNLP in `/data/`. For each dataset, there is 3 json files containing dialogs for train/dev/test set. Each dialog contains utterances
+We have provided the preprocessed datasets of IEMOCAP, MELD, DailyDialog and EmoryNLP in `/data/`. For each dataset, there are 3 json files containing dialogs for train/dev/test set. Each dialog contains utterances
  and their corresponding speaker information and emotion labels.
  
 ### Pre-trained XLNet
