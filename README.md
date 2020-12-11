@@ -1,8 +1,6 @@
 # DialogXL
 This repo contains the PyTorch implementaion for AAAI-2021 accepted paper DialogXL: All-in-One XLNet for Multi-Party Conversation Emotion Recognition.
 
-For any questions about the implementation, plaese email shenwzh3@mail2.sysu.edu.cn.
-
 ## Requirements
 * Python 3.6
 * PyTorch 1.4.0
