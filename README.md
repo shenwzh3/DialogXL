@@ -8,7 +8,7 @@ This repo contains the PyTorch implementaion for AAAI-2021 accepted paper Dialog
 * scikit-learn 0.23.1
 * CUDA 10.0
 
-## Perparation
+## Preparation
 
 ### Datasets
 We have provided the preprocessed datasets of IEMOCAP, MELD, DailyDialog and EmoryNLP in `/data/`. For each dataset, there are 3 json files containing dialogs for train/dev/test set. Each dialog contains utterances
