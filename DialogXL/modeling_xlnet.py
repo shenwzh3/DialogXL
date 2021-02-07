@@ -26,7 +26,7 @@ from torch import nn
 from torch.nn import CrossEntropyLoss, MSELoss
 from torch.nn import functional as F
 
-from transformers.activations import gelu_new, swish
+from transformers.activations import gelu_new, silu
 from transformers import XLNetConfig
 from file_utils import (
     ModelOutput,
@@ -195,7 +195,7 @@ def load_tf_weights_in_xlnet(model, config, tf_path):
     return model
 
 
-ACT2FN = {"gelu": gelu_new, "relu": torch.nn.functional.relu, "swish": swish}
+ACT2FN = {"gelu": gelu_new, "relu": torch.nn.functional.relu, "swish": silu}
 
 
 XLNetLayerNorm = nn.LayerNorm
@@ -990,7 +990,7 @@ class XLNetModel_dialog(XLNetPreTrainedModel_dialog):
         output_hidden_states = (
             output_hidden_states if output_hidden_states is not None else self.config.output_hidden_states
         )
-        return_tuple = return_tuple if return_tuple is not None else self.config.use_return_tuple
+        return_tuple = return_tuple if return_tuple is not None else None
 
         # the original code for XLNet uses shapes [len, bsz] with the batch dimension at the end
         # but we want a unified interface in the library with the batch size on the first dimension
