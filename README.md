@@ -1,6 +1,11 @@
 # DialogXL
 This repo contains the PyTorch implementaion for AAAI-2021 accepted paper DialogXL: All-in-One XLNet for Multi-Party Conversation Emotion Recognition.
 
+## Updata 2021/3/18
+We have updated our code to make it fit the latest version of huggingface's Transformers. Now you can run our code with Transformers 4.3.3, the pre-trained XLNet can be download from https://huggingface.co/xlnet-base-cased.
+
+The hyper-parameters we previously provided still work well, but the well-trained DialogXL models we uploaded may be unable to run in this code version.
+
 ## Requirements
 * Python 3.6
 * PyTorch 1.4.0
