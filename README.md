@@ -51,14 +51,14 @@ For EmoryNLP (test F1: 36.27):
 You can also train the models with the following codes:
 
 For IEMOCAP: 
-`python run.py --dataset_name IEMOCAP --max_sent_len 200 --mem_len 900 --windowp 10 --num_heads 2 2 4 4 --dropout 0 --lr 1e-5 --epochs 50`
+`python run.py --dataset_name IEMOCAP --max_sent_len 200 --mem_len 900 --windowp 10 --num_heads 2 2 4 4 --dropout 0 --lr 1e-5 --batch_size 8 --epochs 50`
 
 For MELD: 
-`python run.py --dataset_name MELD --max_sent_len 300 --mem_len 400 --windowp 5 --num_heads 5 5 1 1 --dropout 0 --lr 1e-6 --epochs 15`
+`python run.py --dataset_name MELD --max_sent_len 300 --mem_len 400 --windowp 5 --num_heads 5 5 1 1 --dropout 0 --lr 1e-6 --batch_size 4 --epochs 15`
 
 For DailyDialog: 
-`python run.py --dataset_name DailyDialog --max_sent_len 300 --mem_len 450 --windowp 10 --num_heads 1 2 5 4 --dropout 0.3 --lr 1e-6 --epochs 20`
+`python run.py --dataset_name DailyDialog --max_sent_len 300 --mem_len 450 --windowp 10 --num_heads 1 2 5 4 --dropout 0.3 --lr 1e-6 --batch_size 8 --epochs 20`
 
 For EmoryNLP: 
-`python run.py --dataset_name EmoryNLP --max_sent_len 150 --mem_len 400 --windowp 5 --num_heads 1 2 4 5 --dropout 0 --lr 7e-6 --epochs 10`
+`python run.py --dataset_name EmoryNLP --max_sent_len 150 --mem_len 400 --windowp 5 --num_heads 1 2 4 5 --dropout 0 --lr 7e-6 --batch_size 8 --epochs 10`
 
